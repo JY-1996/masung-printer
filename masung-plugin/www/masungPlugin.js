@@ -2,9 +2,6 @@ var exec = require('cordova/exec');
 
 var printer = function(){};
 
-printer.prototype.coolMethod = function (arg0, success, error) {
-	exec(success, error, 'masungPlugin', 'coolMethod', arg0);
-};
 printer.prototype.init = function (arg0, success, error) {
 	exec(success, error, 'masungPlugin', 'init', arg0);
 };

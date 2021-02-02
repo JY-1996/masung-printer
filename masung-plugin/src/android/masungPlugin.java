@@ -42,10 +42,6 @@ public class masungPlugin extends CordovaPlugin {
     @Override
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         switch (action) {
-            case "coolMethod":
-            String message = args.getString(0);
-            this.coolMethod(message, callbackContext);
-            return true;
             case "init":
             cordova.getThreadPool().execute(this::init);
             return true;
@@ -614,14 +610,6 @@ public class masungPlugin extends CordovaPlugin {
                 e.printStackTrace();
                 callbackContext.error(e.getMessage());
             }
-        }
-    }
-
-    private void coolMethod(String message, CallbackContext callbackContext) {
-        if (message != null && message.length() > 0) {
-            callbackContext.success(message);
-        } else {
-            callbackContext.error("Expected one non-empty string argument.");
         }
     }
 
