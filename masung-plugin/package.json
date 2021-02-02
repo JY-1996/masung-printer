@@ -1,0 +1,17 @@
+{
+  "name": "masung-printer-plugin",
+  "version": "1.0.0",
+  "description": "",
+  "cordova": {
+    "id": "masung.printer.plugin",
+    "platforms": [
+      "android"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova-android"
+  ],
+  "author": "tjy",
+  "license": "ISC"
+}

@@ -1,0 +1,9 @@
+repositories {
+	maven { url "https://jitpack.io" }
+}
+
+dependencies {
+	implementation files('libs/printsdk0615-V2.2.jar')
+	
+	implementation files('libs/usbprintsdk-v2.11.jar')
+}
